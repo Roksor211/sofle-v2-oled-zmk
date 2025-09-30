@@ -124,8 +124,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-default">
-<text x="0" y="28" class="label" id="default">default:</text>
+<g transform="translate(30, 0)" class="layer-Base-Layer">
+<text x="0" y="28" class="label" id="Base-Layer">Base-Layer:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -340,10 +340,8 @@ path.combo {
 </g>
 <g transform="translate(316, 274) rotate(22.5)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Funktion-1">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">Funktion</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">1</tspan>
-</text>
+<a href="#Funktion1">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 78%">Funktion1</tspan></text>
 </a></g>
 <g transform="translate(378, 291) rotate(30.0)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -355,10 +353,8 @@ path.combo {
 </g>
 <g transform="translate(580, 274) rotate(-22.5)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Funktion-2">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">Funktion</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">2</tspan>
-</text>
+<a href="#Funktion2">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 78%">Funktion2</tspan></text>
 </a></g>
 <g transform="translate(644, 259)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -374,8 +370,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 398)" class="layer-Funktion 1">
-<text x="0" y="28" class="label" id="Funktion-1">Funktion 1:</text>
+<g transform="translate(30, 398)" class="layer-Funktion1">
+<text x="0" y="28" class="label" id="Funktion1">Funktion1:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -622,8 +618,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 795)" class="layer-Funktion 2">
-<text x="0" y="28" class="label" id="Funktion-2">Funktion 2:</text>
+<g transform="translate(30, 795)" class="layer-Funktion2">
+<text x="0" y="28" class="label" id="Funktion2">Funktion2:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
