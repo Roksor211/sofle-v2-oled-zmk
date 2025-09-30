@@ -71,11 +71,13 @@
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp RET       &kp SPACE  &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
-            label = "lower";
+            label = "Funktion 1";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -97,7 +99,7 @@
         };
 
         raise_layer {
-            label = "raise";
+            label = "Funktion 2";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
