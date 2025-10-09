@@ -1,0 +1,36 @@
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+};
+
+&pro_micro {  /* Nice!Nano pin aliases match pro_micro footprint */
+    /* Nothing extra here; pins assigned below */
+};
+
+/* Keyboard scan matrix with added row5 for the new top row */
+kscan0: kscan {
+    compatible = "zmk,kscan-gpio-matrix";
+    diode-direction = "col2row"; /* Sofle RGB uses diodes from switch to row (adjust if needed) */
+
+    /* Update these GPIO pins to match your routed wiring to the Nice!Nano */
+    row-gpios = <
+        &gpio0  P0_??  GPIO_ACTIVE_HIGH    /* row0 */
+        &gpio0  P0_??  GPIO_ACTIVE_HIGH    /* row1 */
+        &gpio0  P0_??  GPIO_ACTIVE_HIGH    /* row2 */
+        &gpio0  P0_??  GPIO_ACTIVE_HIGH    /* row3 */
+        &gpio0  P0_??  GPIO_ACTIVE_HIGH    /* row4 */
+        &gpio0  P0_??  GPIO_ACTIVE_HIGH    /* row5 (NEW) */
+    >;
+
+    col-gpios = <
+        &gpio1  P1_??  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* col0 */
+        &gpio1  P1_??  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* col1 */
+        &gpio1  P1_??  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* col2 */
+        &gpio1  P1_??  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* col3 */
+        &gpio1  P1_??  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* col4 */
+        &gpio1  P1_??  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* col5 */
+    >;
+
+    /* Matrix has 6 rows x 6 columns per half after the change */
+};

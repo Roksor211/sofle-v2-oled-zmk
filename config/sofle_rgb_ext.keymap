@@ -1,0 +1,21 @@
+// sofle_rgb_ext.keymap — includes an extra top row per half
+// Adjust bindings to your preference
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                // NEW TOP ROW (row5): typically F-keys or macros
+                &kp ESC     &kp F1   &kp F2   &kp F3   &kp F4   &kp BSPC
+                // Original top row
+                &kp GRAVE   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5
+                &kp TAB     &kp Q    &kp W    &kp E    &kp R    &kp T
+                &kp CAPS    &kp A    &kp S    &kp D    &kp F    &kp G
+                &kp LSHIFT  &kp Z    &kp X    &kp C    &kp V    &kp B
+                // Thumb cluster should be added here depending on original Sofle mapping
+            >;
+        };
+    };
+};

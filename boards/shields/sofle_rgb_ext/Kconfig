@@ -1,0 +1,4 @@
+# Kconfig for sofle_rgb_ext shield
+config ZMK_KEYBOARD_SOFTWARE
+    bool "Enable sofle_rgb_ext"
+    default y

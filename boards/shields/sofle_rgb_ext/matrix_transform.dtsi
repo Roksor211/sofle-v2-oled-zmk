@@ -1,0 +1,6 @@
+/ {
+    /* Example matrix transform for a 6x6 main grid + thumbs (not included here).
+     * Adjust 'col-offset' or provide a full transform if your physical grid isn't rectangular.
+     */
+};
+
