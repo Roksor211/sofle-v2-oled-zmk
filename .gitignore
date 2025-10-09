@@ -1,0 +1,6 @@
+zephyr/
+modules/
+zmk/
+build/
+.idea/
+.venv/
